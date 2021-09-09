@@ -24,6 +24,11 @@ public class LoginPage extends CommonActions{
         typeText(passwordField, "secret_sauce");
     }
 
+    public void enterInvalidCredentials(String invalidUsername, String invalidPassword){
+        typeText(userNameField, invalidUsername);
+        typeText(passwordField, invalidPassword);
+    }
+
     @FindBy(css = "#login-button")
     WebElement loginBtn;
 
